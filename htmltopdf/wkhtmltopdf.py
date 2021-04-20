@@ -11,6 +11,7 @@ try:
     wkhtmltopdf_path = shutil.which(WKHTMLTOPDF)
 except AttributeError:
     import distutils
+
     wkhtmltopdf_path = distutils.spawn.find_executable(WKHTMLTOPDF)
 
 
@@ -28,7 +29,7 @@ def wkhtmltopdf(pdf_path, html_path):
 
 def htmltopdf(pdf_path, html_path=None, html_content=None):
     if html_content:
-        with tempfile.NamedTemporaryFile(suffix='.html') as fp:
+        with tempfile.NamedTemporaryFile(suffix=".html") as fp:
             logger.debug("writing temp file %s", fp.name)
             fp.write(html_content)
             fp.flush()
