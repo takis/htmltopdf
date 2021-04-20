@@ -4,10 +4,8 @@
 language: python
 
 python:
-  - TOXENV=py34
-  - TOXENV=py33
-  - TOXENV=py27
-  - TOXENV=py26
+  - TOXENV=py38
+  - TOXENV=py39
   - TOXENV=pypy
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
@@ -27,4 +25,4 @@ deploy:
   on:
     tags: true
     repo: takis/htmltopdf
-    condition: $TOXENV == py27
+    condition: $TOXENV == py39

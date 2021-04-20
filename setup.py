@@ -24,7 +24,7 @@ test_requirements = [
 
 setup(
     name='htmltopdf',
-    version='0.1.0',
+    version='0.1.1',
     description="Convert HTML to PDF.",
     long_description=readme + '\n\n' + history,
     author="Panagiotis H.M. Issaris",
@@ -45,12 +45,9 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: ISC License (ISCL)',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     test_suite='tests',
     tests_require=test_requirements
